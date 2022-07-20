@@ -1,0 +1,143 @@
+:root {
+  font-family: sans-serif;
+  --red-color: #ff676c;
+  --light-grey-color: #f2f2f2;
+  --white-color: white;
+}
+
+.cards-section {
+  min-height: 100vh;
+  padding: 64px 0;
+  background: linear-gradient(
+    180deg,
+    var(--light-grey-color) 0%,
+    var(--light-grey-color) 50%,
+    var(--red-color) 0%
+  );
+  text-align: center;
+}
+
+.header {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 100px;
+  color: var(--red-color);
+  text-transform: uppercase;
+}
+
+.cards-wrapper {
+  max-width: 50%;
+  margin: auto;
+}
+
+.cards-inner {
+  display: inline-block;
+  width: 270px;
+  padding: 20px;
+  border-radius: 5%;
+  margin: 10px;
+  background-color: var(--white-color);
+  box-shadow: 0px 5px 19px -4px #585858;
+  cursor: pointer;
+}
+
+.photo-wrapper {
+  position: relative;
+  width: 110px;
+  height: 110px;
+  margin: auto;
+}
+
+.photo-inner-initials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  text-transform: uppercase;
+}
+
+.white-text-color {
+  color: var(--white-color);
+}
+
+.photo-inner-img {
+  padding: 2px;
+  border: 2px solid var(--red-color);
+  background-color: var(--white-color);
+  object-fit: cover;
+  object-position: top;
+}
+
+.photo-inner-initials,
+.photo-inner-img {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.choosed-list {
+  padding-bottom: 30px;
+}
+
+.actors-name,
+.choosed-actors-name {
+  font-weight: 600;
+  line-height: 50px;
+  text-transform: capitalize;
+}
+.choosed-actors-name {
+  max-width: 50%;
+  border-radius: 10px;
+  margin: auto;
+  font-size: 30px;
+  color: var(--red-color);
+  box-shadow: 0px 5px 19px -4px #585858;
+}
+.choosed-actors-name + .choosed-actors-name {
+  margin-top: 10px;
+}
+
+.fa-stack {
+  margin-top: 35px;
+  color: var(--red-color);
+}
+
+.choosed-wrapper {
+  max-width: 50%;
+  border-radius: 10px;
+  margin: auto;
+  margin-top: 70px;
+  background-color: var(--white-color);
+  box-shadow: 0px 5px 19px -4px #585858;
+}
+
+.choosed-header {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 100px;
+  color: var(--red-color);
+  text-transform: uppercase;
+}
+
+.error-message-wrapper {
+  margin: auto;
+  width: 50vw;
+  height: 50vh;
+  padding: 16px;
+  border-radius: 10px;
+  border: 5px dotted yellow;
+  background-color: black;
+  color: var(--white-color);
+  box-shadow: 0px 5px 19px -4px #585858;
+}
+
+.error-message-inner {
+  margin-top: 50px;
+  font-size: 50px;
+  line-height: 50px;
+}
